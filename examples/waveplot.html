@@ -37,6 +37,20 @@
         margin-bottom: 10px;
       }
 
+      #playPauseButton {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #1693a5;
+        color: #ffffff;
+        cursor: pointer;
+        width: 55px;
+      }
+
+      #playPauseButton:hover {
+        background-color: #17a8bb;
+      }
+
       #description {
         font-size: 9pt;
         font-weight: 300;
@@ -69,6 +83,7 @@
       </div>
       <ul id="panel"></ul>
       <input id="chordinput" type="text" value="Amaj7" />
+      <input id="playPauseButton" type="button" value="play" />
       <p id="description">Write a chord in the input (try <i>C13<sup>b9</sup></i>
       or maybe <i>Fsus4<sup>maj#11</sup></i>) above and hit enter. You can click and drag
       your way around the wave function.</p>

@@ -171,3 +171,11 @@ plot.addEventListener('mousemove', function(e) {
 input.addEventListener('change', inputChanged, false);
 inputChanged.call(input);
 
+// Play audio
+var playPauseButton = document.getElementById('playPauseButton');
+var isPlaying = false;
+
+playPauseButton.addEventListener('mouseup', function(e) {
+  e.currentTarget.value = isPlaying ? 'play' : 'pause';
+  isPlaying = !isPlaying;
+}, false);
